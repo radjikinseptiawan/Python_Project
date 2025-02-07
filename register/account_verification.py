@@ -29,7 +29,7 @@ class verification_section:
         elif not re.search(numeric,password):
             raise ValueError('Failed Password Verification : password must have a number character!') 
         elif not re.search(symbol,password):
-            raise ValueError('Failed Password Verification : password must have a symbol character!') 
+            print('Failed Password Verification : password must have a symbol character!') 
         else:
             print("Password has success validate!")
         return password
